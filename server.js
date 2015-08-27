@@ -10,8 +10,8 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.set("view options", { layout: false });
 app.use(express.static(__dirname + '/public'));
-server.listen(80);
-console.log("Server - Waiting connection at port: 80");
+server.listen(8000);
+console.log("Server - Waiting connection at port: 8000");
 
 app.get("/qrcode", function(req, res){
   var text = url.parse(req.url, true).query.text;
